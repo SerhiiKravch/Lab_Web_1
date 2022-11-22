@@ -1,0 +1,184 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Lab</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+      <header>
+        <li>
+            <div class="topnav">
+                <img src="user.psd" alt="" />
+                <a class="active" href="#home">Home</a>
+                <a href="#messeges">messeges</a>
+                <a href="#notices">notices</a>
+                <a href="/">
+                    <img src="img/logo.png" alt="N" />
+                </a>
+                <input type="text" placeholder="Search..">
+            </div>
+        </li>
+            
+      </header>
+      <section>
+        <nav>
+            <li>
+                <a href="#Dashboard">DASHBOARD</a>
+                <section>
+                    <ul>
+                        <li>
+                            <img src="user.psd" alt="" />
+                            <p class="User_Name">
+                                Hoang Nguyen
+                                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <button class="edit_acc">
+                                    edit
+                                </button>
+                                <button class="log out">
+                                    log out
+                                </button>
+                            </p>
+                            <p class="status">
+                                Student
+                                <a href="/">Learn More</a> 
+                                <p>
+                                    <img src="achievement 2.psd" alt="">
+                                    8,782 exp
+                                </p>
+                            </p>
+                        </li>
+                        <li>
+                            <a href="">KNOWLEDGE</a>
+                            <a href="">COURSE</a>
+                            <a href="">EXAM</a>
+                            <a href="">Q&A</a>
+                            <a href="">NEWS</a>
+                            <a href="">ACTIVITY</a>
+                            <a href="">FRIENDS</a>
+                        </li>
+                            <li>
+                            <section>
+                            <div class="tab">
+                                <button class="tablinks" onclick="openCourse(event, 'D_C')">DONE COURSE</button>
+                                <button class="tablinks" onclick="openCourse(event, 'U_C')">UNFINISHED COURSE</button>
+                              </div>
+                              
+                              <!-- Tab content -->
+                              <div id="D_C" class="tabcontent">
+                                <button>
+                                    Basic for UX Designer
+                                </button>
+                                <button>
+                                    10 steps to Improve your wireframe
+                                </button>
+                                <button>
+                                    A Better Way To Request App Ratings
+                                </button>
+                                <button>
+                                    How to Speed Up Your WordPress Website
+                                </button>
+                                <button>
+                                    Show more &#65086;
+                                </button>
+                              </div>
+                              
+                              <div id="U_C" class="tabcontent">
+                                <h3>In Production</h3>
+                              </div>
+                            </section>
+                            <section>
+                            <div class="tab">
+                                <button class="tablinks" onclick="openCourse(event, 'A_Q')">ASKING QUESTIONS</button>
+                                <button class="tablinks" onclick="openCourse(event, 'Ans_Q')">ANSWERED QUESTIONS</button>
+                            </div>
+                                  
+                                  <!-- Tab content -->
+                            <div id="A_Q" class="tabcontent">
+                                <button>
+                                    &#x1F4AC; 12 How to make good logo
+                                </button>
+                                <button>
+                                    &#x1F4AC; 3 What are the best mobile apps for ...\
+                                </button>
+                                <button>
+                                    &#x1F4AC; 67 What's the difference between UI and ...
+                                </button>
+                                <button>
+                                    &#x1F4AC; What logos include hidden messages ...
+                                </button>
+                                <button>
+                                    Show more &#65086;
+                                </button>
+                            </div>
+                                  
+                            <div id="Ans_Q" class="tabcontent">
+                                <h3>In Production</h3>
+                            </div>
+                            </section>
+                            <section>
+                            <div class="tab">
+                                <button class="tablinks" onclick="openCourse(event, 'F_E')">FOLLOWING EXAMS</button>
+                                <button class="tablinks" onclick="openCourse(event, 'D_E')">Done EXAMS</button>
+                            </div>
+                                  
+                                  <!-- Tab content -->
+                                <div id="A_Q" class="tabcontent">
+                                    <p>Junior web designer</p>
+                                    <p>Which Is the best way to pass the PMP...</p>
+                                    <p>What are great examples of viral UX/UI...</p>
+                                    <p>Why Is consistency Important In design?</p>
+                                    <button>
+                                        Show more &#65086;
+                                    </button>
+                                </div>
+                                  
+                                <div id="Ans_Q" class="tabcontent">
+                                    <h3>In Production</h3>
+                                </div>
+                            </section>
+                            <section>
+                                <li>
+                                <h3>Expirience gained</h3>
+                                </li>
+                                <li>
+                                    <h3>FRIEND ACTIVITY</h3>
+                                </li>
+                            </section>
+                            </li>
+                        </li>
+                    </ul>
+                </section>
+            </li>
+            <li>
+                <a href="#Course">COURSE</a>
+            </li>
+            <li>
+                <a href="#Exam">EXAM</a>
+            </li>
+            <li>
+                <a href="#Q&A">Q&A</a>
+            </li>
+            <li>
+                <a href="#News">NEWS</a>
+            </li>
+        </nav>
+      </section>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

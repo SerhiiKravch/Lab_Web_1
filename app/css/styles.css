@@ -1,0 +1,302 @@
+
+.NavBar{
+  background: rgb(52, 76, 92);
+}
+
+.NavBar li{
+  padding: 16px 0px;
+  list-style: none;
+  width: 100%;
+  position: relative;
+  list-style: none;
+  line-height: 50px;
+}
+
+.NavBar li a{
+  color: grey;
+  display: flex;
+  font-size: medium;
+  font-weight: 500;
+ text-decoration: none;
+ padding: 0px 27px;
+ align-items: center;
+ transition: all 0.4s ease;
+}
+
+.NavBar li a .icon{
+  float: left;
+  padding-right: 26px;
+}
+
+.NavBar li a .word{
+  float: left;
+}
+
+.NavBar li a:hover{
+  background: rgb(32, 52, 68);
+}
+
+
+.NavBar li a:hover .word{
+  color: #fff;
+}
+
+.NavBar li a:hover .icon{
+  color: rgb(44, 204, 116);
+}
+
+.MAIN{
+  background:rgb(240, 244, 244);
+}
+
+
+  .menu{
+text-align: center;
+place-items: center;
+background: #fff;
+border: 1px solid rgb(156, 160, 160);  ;
+border-left: 0px #fff;
+border-right: 0px #fff;
+border-top: 0px #fff;
+}
+
+  .menu .navbar_2
+{
+  position: relative;
+  display: flex;
+  max-width: 680px;
+}
+
+.menu .navbar_2 li{
+  list-style: none;
+  flex: 1;
+  font-size: 10px;
+  font-weight:bolder ;
+  cursor: pointer;
+  padding: 12px 24px 0px 24px;
+}
+
+.menu .navbar_2 li a{
+  color: black;
+  display: inline-block;
+  padding: 0px 0px 4px 0px;
+  text-decoration: none;
+}
+
+.menu .navbar_2 li .active{
+  border-bottom: 4px solid green;
+  transition: 0.5s ease;
+}
+
+.tbs .small_bar{
+  height: 54px;
+  width: 54px;
+  margin: 15px;
+}
+
+.tables_2{
+  padding: 44px;
+  padding-right: 0px;
+  height: 478px;
+  width: 423px;
+}
+
+.tab_b_1{
+  height: 390px;
+  width: 380px;
+  background: #fff;
+  padding: 22px;
+  border-top-left-radius: 1%;
+  border-bottom-left-radius: 1%;
+  border: 1px solid rgb(156, 160, 160);
+}
+
+.graphic{
+  width: 378px;
+  text-decoration: none;
+}
+
+.graphic li{
+  text-decoration: none;
+  display: inline;
+  color: rgb(156, 160, 160); ;
+}
+
+.graphic .tbs{
+  display: inline-flex;
+  position: relative;
+}
+.graphic .tbs .number{
+  font-size: 30px;
+  font-weight: 700;
+  color: #2ccc74;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  padding-top: 33px;
+  height: 70px;
+}
+.graphic .text{
+  display: inline-flex;
+  font-size: 8px;
+  border-bottom: 1px solid rgb(156, 160, 160);
+}
+
+.graphic .text .t{
+  margin-right: 28px;
+  margin-left: 22px;
+  color: rgb(156, 160, 160);
+}
+
+.graphic .text .t_B{
+  font-size: 10px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  color: rgb(129, 130, 130);
+}
+.line_chart .text{
+  color: rgb(156, 160, 160);
+  margin: 16px 0px;
+  font-size: medium;
+  font-weight: 400;
+}
+
+.line_chart .chart{
+  width: 330px;
+  height: 133px;
+}
+
+.Friends{
+  padding: 44px;
+  padding-left: 0px;
+}
+
+.Friends .list{
+  background: #fff;
+  border: 1px solid rgb(156, 160, 160);
+  border-bottom-right-radius: 1%;
+  border-top-right-radius: 1%;
+  height: 390px;
+}
+
+.Friends .list .Top{
+  padding: 10px;
+  padding-left: 22px;
+  height: 45px;
+  display: inline-flex;
+  width: 100%;
+  color: rgb(104, 104, 104);
+  border-bottom: 1px solid rgb(156, 160, 160);
+  
+  
+}
+
+.Friends .list .buttons{
+  display: inline-block;
+  width: 100%;
+}
+
+.Friends .list .buttons a{
+  position: relative;
+  float: left;
+  padding-left: 10px;
+  text-decoration: none;
+  width: 100%;
+}
+
+.Friends .list .buttons a:hover{
+  transition: all 0.35s;
+  border-left: 2px solid darkviolet;
+  background: rgb(252, 247, 254);
+}
+
+.Friends .list .buttons a .content{
+  width: 700px;
+  height: 76px;
+  border-bottom: 1px solid rgb(156, 160, 160);
+  padding: 22px;
+}
+
+.Friends .list .buttons a .content:hover{
+  background: rgb(252, 247, 254);
+  transition: all 0.35s;
+}
+
+.Friends .list .buttons .photo{
+  padding-right: 13px ;
+  float: left;
+}
+
+.Friends .list .buttons .Name{
+  padding-right: 8px;
+  padding-top: 8px;
+  font-size: 12px;
+  float: left;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: lightskyblue;
+}
+
+.Friends .list .buttons .Status{
+  padding-right: 8px;
+  padding-top: 8px;
+  font-size: 12px;
+  font-weight: 500;
+  display: flex;
+  float: left;
+  align-items: center;
+  justify-content: center;
+  color: rgb(142, 140, 140);
+}
+
+.Friends .list .buttons .Class{
+  padding-right: 8px;
+  padding-top: 8px;
+  font-size: 12px;
+  font-weight: 500;
+  display: flex;
+  float: left;
+  align-items: center;
+  justify-content: center;
+  color: black;
+}
+
+.Friends .list .buttons .Time{
+  float: right;
+  padding-top: 8px;
+  color: rgb(142, 140, 140);
+  font-size: 12px;
+}
+.Friends .list .buttons .Time svg{
+  font-size: 10px;
+}
+
+
+.buttons .s_m_btn{
+  display: inline-flex;
+  float: right;
+}
+
+.buttons .s_m_btn button{
+  border: none;
+  outline: none;
+  background: #fff;
+  margin-top: 8px;
+  font-size: smaller;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.buttons .s_m_btn .s_l{
+  display: none;
+}
+
+.buttons.show-more .s_m_btn .s_m{
+  display: none;
+}
+.buttons.show-more .s_m_btn .s_l{
+  display: inline;
+}

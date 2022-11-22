@@ -1,0 +1,271 @@
+.wrapper{
+    max-width: 350px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.tabs{
+    position: relative;
+    height: 345px;
+    width: 324px;
+    margin: 3rem 0;
+    background: rgb(240, 244, 244);
+}
+
+.tabs::before,.tabs::after {
+  content: "";
+  display: table;
+}
+
+.tabs::after {
+    clear: both;
+}
+
+.tab {
+    float: left;
+    font-size: small;
+    width: 162px;
+    height: 85px;
+}
+
+.tab label{
+    color: grey;
+    width: 162px;
+    height: 85px;
+}
+
+.tab-switch {
+    display: none;
+}
+
+.tab-switch-2 {
+    display: none;
+}
+
+.tab-switch-3 {
+    display: none;
+}
+
+.tab-label{
+    position: relative;
+    display: block;
+    border-top-left-radius: 2%;
+    border-top-right-radius: 2%;
+    line-height: 2.75em;
+    padding: 0 1.618em;
+    background: rgb(240, 244, 244);
+    border-bottom: 1px solid rgb(156, 160, 160);
+    color: #fff;
+    padding-top: 10px;
+    cursor: pointer;
+    top: 0;
+    transition: all 0.5s;
+}
+
+.tab-label:hover {
+    background: #fff;
+    transition: top 0.5s;
+  }
+
+
+  .tab-content {
+    width: 324px;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    padding-left: 0px;
+    padding-right: 0px;
+    background: #fff;
+    color: #2c3e50;
+    border: 1px solid rgb(156, 160, 160);
+    border-top: 0px;
+    opacity: 0;
+    transition: all 0.5s;
+  }
+
+  .tab-content.show-more #moreText{
+    display: inline-flex;
+    font-size: smaller;
+    color: black;
+    width: 100%;
+    border-bottom: 1px solid rgb(156, 160, 160);
+  }
+  
+  .tab-content .s_m_btn .s_l{
+    display: none;
+  }
+  
+  .tab-content.show-more .s_m_btn .s_m{
+    display: none;
+  }
+  .tab-content.show-more .s_m_btn .s_l{
+    display: inline;
+  }
+
+  .tab-content li{
+    height: 55px;
+    list-style: none;
+    border-bottom: 0.5px solid  rgb(156, 160, 160);
+  }
+
+  .tab-content li a{
+    padding: 0px 20px;
+    font-size: smaller;
+    color: grey;
+    display: flex;
+   text-decoration: none;
+  }
+
+  .tab-content li a .text{
+    padding: 20px 0px;
+  }
+
+  .tab-content li a .bar_chart{
+    height: 54.5px;
+    width: 40px;
+    margin-right: 10px;
+  }
+
+  .tab-content .s_m_btn{
+    display: inline-flex;
+    float: right;
+  }
+
+  .tab-content .number{
+    padding: 20px 0px;
+  }
+  .tab-content .icon{
+    padding: 18px 0px;
+  }
+
+  .tab-content .s_m_btn button{
+    border: none;
+    outline: none;
+    background: #fff;
+    margin-top: 8px;
+    font-size: smaller;
+    font-weight: 500;
+    margin-bottom: 8px;
+  }
+
+  #moreText{
+    display: none;
+  }
+
+  .tab-switch:checked + .tab-label {
+    background: #fff;
+    color: orange;
+    border: 1px solid rgb(156, 160, 160);
+    border-bottom: 0px solid #fff ;
+    transition: all 0.35s;
+    z-index: 1;
+  }
+
+  .sentence{
+    float: center;
+  }
+
+  .tab-switch-2:checked + .tab-label {
+    background: #fff;
+    color: darkviolet;
+    border: 1px solid rgb(156, 160, 160);
+    border-bottom: 0px solid #fff ;
+    transition: all 0.35s;
+    z-index: 1;
+  }
+
+  .tab-switch-3:checked + .tab-label {
+    background: #fff;
+    color: #2ccc74;
+    border: 1px solid rgb(156, 160, 160);
+    border-bottom: 0px solid #fff ;
+    transition: all 0.35s;
+    z-index: 1;
+  }
+
+  .tab-switch:checked + label + .tab-content {
+    z-index: 2;
+    opacity: 1;
+    transition: all 0.35s;
+  }
+
+  .tab-switch-2:checked + label + .tab-content {
+    z-index: 2;
+    opacity: 1;
+    transition: all 0.35s;
+  }
+
+  .tab-switch-3:checked + label + .tab-content {
+    z-index: 2;
+    opacity: 1;
+    transition: all 0.35s;
+  }
+
+  .tab-buttons li:hover{
+    background: rgb(255, 252, 249);
+    transition: all 0.35s;
+    border-left: 4px solid orange;
+  }
+
+  .tab-buttons svg{
+    padding-top: 2px;
+  }
+
+  .tab-buttons .number{
+    padding-left: 2px;
+    padding-right: 16px;
+  }
+
+  .tab-buttons_2 li:hover{
+    background: rgb(252, 247, 254);
+    transition: all 0.35s;
+    border-left: 4px solid darkviolet;
+  }
+
+  .tab-buttons_2 svg{
+    padding-top: 2px;
+  }
+
+  .tab-buttons_2 .number{
+    padding-left: 2px;
+    padding-right: 16px;
+  }
+
+  .tab-buttons_3 li:hover{
+    background: #f2fff8;
+    transition: all 0.35s;
+    border-left: 4px solid #2ccc74;
+  }
+
+  .tab-buttons_3 svg{
+    padding-top: 2px;
+  }
+
+  .tab-buttons_3 .number{
+    padding-left: 2px;
+    padding-right: 16px;
+  }
+
+
+  .tab-content li .active{
+    border-left: 4px purple;
+    transition: 0.5s ease;
+  }
+  
+  .tab-label .Big_Number{
+    display: flex;
+    font-size: 30px;
+    width: 100%;
+    height: 30px;
+    justify-content: center;
+    font-weight: 500;
+  }
+
+  .tab-label .Big_Sentence{
+    font-size: 9px;
+    display:flex;
+    height: 30px;
+    width: 100%;
+    justify-content: center;
+    font-weight: 500;
+  }

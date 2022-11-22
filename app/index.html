@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+     rel="stylesheet" 
+     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+    crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      <script src="js/scripts.js"></script>
+    <link rel="stylesheet" href="css/Header.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/tables.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="path/to/chartjs/dist/chart.umd.js"></script>
+    <style>
+    </style>
+</head>
+<body>
+
+
+  <header>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xl-2 col-md-3 col-sm-12 py-3 px-3 P_I">
+          <div class="img_p_i">
+          <img src="img/user.png" alt="">
+          </div>
+            <div class="text">
+              HOANG NGUYEN
+            </div>
+        </div>
+        <div class="col py-3 px-3 Menu">
+          <span class="icons mt-2 py-3 ">
+            <a href="#" class="person py-3 px-3">
+              <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="currentColor" class="bi bi-person" viewBox="0 0 19 19">
+                <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"/>
+              </svg>
+            </a>
+            <a href="#" class="message py-3 px-3">
+              <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="currentColor" class="bi bi-chat-text" viewBox="0 0 19 19">
+                <path d="M2.678 11.894a1 1 0 0 1 .287.801 10.97 10.97 0 0 1-.398 2c1.395-.323 2.247-.697 2.634-.893a1 1 0 0 1 .71-.074A8.06 8.06 0 0 0 8 14c3.996 0 7-2.807 7-6 0-3.192-3.004-6-7-6S1 4.808 1 8c0 1.468.617 2.83 1.678 3.894zm-.493 3.905a21.682 21.682 0 0 1-.713.129c-.2.032-.352-.176-.273-.362a9.68 9.68 0 0 0 .244-.637l.003-.01c.248-.72.45-1.548.524-2.319C.743 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.52.263-1.639.742-3.468 1.105z"/>
+                <path d="M4 5.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zM4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8zm0 2.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5z"/>
+              </svg>
+            </a>
+            <a href="#" class="bell py-3 px-3">
+              <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="currentColor" class="bi bi-bell" viewBox="0 0 19 19">
+                <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z"/>
+              </svg>
+              <div class="badge bg-danger">2</div>
+            </a>
+          </span>
+          <span class="logo p-3"><img src="img/variant-15 copy 10.png" alt=""></span>
+          <div class="search mt-2 p-3 ">
+            <input type="text" name="searchbar" placeholder="Type for search">
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-search" viewBox="0 0 18 18">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+              </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-l-3 col-xl-2 col-sm-12 py-3 px-0 NavBar" id="NavBar">
+          <li>
+            <a href="#">
+              <div class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-vinyl" viewBox="0 0 23 23">
+                  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                  <path d="M8 6a2 2 0 1 0 0 4 2 2 0 0 0 0-4zM4 8a4 4 0 1 1 8 0 4 4 0 0 1-8 0z"/>
+                  <path d="M9 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                </svg>
+              </div>
+              <div class="word">
+                DASHBOARD
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="icon">
+                <svg style="width:23px;height:23px" viewBox="0 0 25 25">
+                  <path fill="currentColor" d="M19 3H5C3.9 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3M19 19H5V5H19V19M6.2 7.7H11.2V9.2H6.2V7.7M13 15.8H18V17.3H13V15.8M13 13.2H18V14.7H13V13.2M8 18H9.5V16H11.5V14.5H9.5V12.5H8V14.5H6V16H8V18M14.1 10.9L15.5 9.5L16.9 10.9L18 9.9L16.6 8.5L18 7.1L16.9 6L15.5 7.4L14.1 6L13 7.1L14.4 8.5L13 9.9L14.1 10.9Z" />
+                </svg>
+              </div>
+              <div class="word">
+                COURSE
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-clock" viewBox="0 0 23 23">
+                  <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+                  <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/>
+                </svg>
+              </div>
+              <div class="word">
+                EXAM
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-chat-dots" viewBox="0 0 24 24">
+                  <path d="M5 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                  <path d="m2.165 15.803.02-.004c1.83-.363 2.948-.842 3.468-1.105A9.06 9.06 0 0 0 8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6a10.437 10.437 0 0 1-.524 2.318l-.003.011a10.722 10.722 0 0 1-.244.637c-.079.186.074.394.273.362a21.673 21.673 0 0 0 .693-.125zm.8-3.108a1 1 0 0 0-.287-.801C1.618 10.83 1 9.468 1 8c0-3.192 3.004-6 7-6s7 2.808 7 6c0 3.193-3.004 6-7 6a8.06 8.06 0 0 1-2.088-.272 1 1 0 0 0-.711.074c-.387.196-1.24.57-2.634.893a10.97 10.97 0 0 0 .398-2z"/>
+                </svg>
+              </div>
+              <div class="word">
+                Q&A
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-wifi" viewBox="0 0 23 23">
+                  <path d="M15.384 6.115a.485.485 0 0 0-.047-.736A12.444 12.444 0 0 0 8 3C5.259 3 2.723 3.882.663 5.379a.485.485 0 0 0-.048.736.518.518 0 0 0 .668.05A11.448 11.448 0 0 1 8 4c2.507 0 4.827.802 6.716 2.164.205.148.49.13.668-.049z"/>
+                  <path d="M13.229 8.271a.482.482 0 0 0-.063-.745A9.455 9.455 0 0 0 8 6c-1.905 0-3.68.56-5.166 1.526a.48.48 0 0 0-.063.745.525.525 0 0 0 .652.065A8.46 8.46 0 0 1 8 7a8.46 8.46 0 0 1 4.576 1.336c.206.132.48.108.653-.065zm-2.183 2.183c.226-.226.185-.605-.1-.75A6.473 6.473 0 0 0 8 9c-1.06 0-2.062.254-2.946.704-.285.145-.326.524-.1.75l.015.015c.16.16.407.19.611.09A5.478 5.478 0 0 1 8 10c.868 0 1.69.201 2.42.56.203.1.45.07.61-.091l.016-.015zM9.06 12.44c.196-.196.198-.52-.04-.66A1.99 1.99 0 0 0 8 11.5a1.99 1.99 0 0 0-1.02.28c-.238.14-.236.464-.04.66l.706.706a.5.5 0 0 0 .707 0l.707-.707z"/>
+                </svg>
+              </div>
+              <div class="word">
+                NEWS
+              </div>
+            </a>
+          </li>
+        </div>
+        <div class="col MAIN">
+          <div class="row">
+            <div class="col px-3 py-3 pb-0 dashboard">
+              <div class="photo  p-1">
+                <img src="img/Big_User.png" alt="">
+              </div>
+              <div class="Per_Info p-3">
+                HOANG NGUYEN
+                <span class="rating">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star"></span>
+                  <span class="fa fa-star"></span>
+                </span>
+                <div class="status">
+                  Student 
+                  <li><a href="#"> Learn more</a></li>
+                </div>
+                <div class="points">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-award" viewBox="0 0 16 16">
+                    <path d="M9.669.864 8 0 6.331.864l-1.858.282-.842 1.68-1.337 1.32L2.6 6l-.306 1.854 1.337 1.32.842 1.68 1.858.282L8 12l1.669-.864 1.858-.282.842-1.68 1.337-1.32L13.4 6l.306-1.854-1.337-1.32-.842-1.68L9.669.864zm1.196 1.193.684 1.365 1.086 1.072L12.387 6l.248 1.506-1.086 1.072-.684 1.365-1.51.229L8 10.874l-1.355-.702-1.51-.229-.684-1.365-1.086-1.072L3.614 6l-.25-1.506 1.087-1.072.684-1.365 1.51-.229L8 1.126l1.356.702 1.509.229z"/>
+                    <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1 4 11.794z"/>
+                  </svg>
+                  8,782 exp
+                </div>
+              </div> 
+              <div class="d-grid gap-2 d-md-flex my-4 justify-content-md-end buttons">
+                <a href="#" class="edit me-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
+                    <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"/>
+                  </svg>
+                </a>
+                <a href="#" class="edit me-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-in-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0v-2z"/>
+                    <path fill-rule="evenodd" d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col p-0 ">
+              <div class="menu mb-0">
+                <div class="navbar_2" id="navbar_2">
+                  <li>
+                    <a href ="#" class="butt active">KNOWLEDGE</a>
+                  </li>
+                  <li>
+                    <a href="#" class="butt">COURSE</a>
+                  </li>
+                  <li>
+                    <a href="#" class="butt">EXAM</a>
+                  </li>
+                  <li>
+                    <a href="#" class="butt">Q&A</a>
+                  </li>
+                  <li>
+                    <a href="#" class="butt">NEWS</a>
+                  </li>
+                  <li>
+                    <a href="#" class="butt">ACTIVITY</a>
+                  </li>
+                  <li>
+                    <a href="#" class="butt">FRIENDS</a>
+                  </li>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+              <div class="col wrapper">
+                <div class="tabs">
+                  <div class="tab">
+                    <input type="radio" name="css-tabs" id="tab-1" checked class="tab-switch">
+                    <label for="tab-1" class="tab-label">
+                      <div class="Big_Number">12</div>
+                      <div class="Big_Sentence">DONE COURSE</div>
+                    </label>
+                    <div class="tab-content">
+                      <div class="tab-buttons">
+                      <li><a href="#">
+                        <div class="text"> Basic for UX Designer</div>
+                        </a></li>
+                      <li><a href="#">
+                        <div class="text"> 10 steps to Improve your wireframe</div>
+                        </a></li>
+                      <li><a href="#">
+                       <div class="text">A Better Way to Request App Ratings</div> 
+                      </a></li>
+                      <li><a id="Last_Message" href="#">
+                        <div class="text"> How To Speed Up Your WordPress Website</div> 
+                      </a></li>
+                      <li id="moreText"> Work in Process</li>
+                      </div>
+                      <div class="s_m_btn">
+                        <button id="textButton" onclick="toggleText()">
+                          <div class="s_m">
+                            Show more
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-double-down" viewBox="0 0 22 22">
+                              <path fill-rule="evenodd" d="M1.646 6.646a.5.5 0 0 1 .708 0L8 12.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                              <path fill-rule="evenodd" d="M1.646 2.646a.5.5 0 0 1 .708 0L8 8.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                            </svg>
+                          </div>
+                          <div class="s_l">
+                            Show less
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-double-up" viewBox="0 0 22 22">
+                              <path fill-rule="evenodd" d="M7.646 2.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 3.707 2.354 9.354a.5.5 0 1 1-.708-.708l6-6z"/>
+                              <path fill-rule="evenodd" d="M7.646 6.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 7.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/>
+                            </svg>
+                          </div>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab">
+                    <input type="radio" name="css-tabs" id="tab-2" checked class="tab-switch">
+                    <label for="tab-2" class="tab-label">
+                      <div class="Big_Number">3</div>
+                      <div class="Big_Sentence">UNFINISHED COURSE</div>
+                      </label>
+                    <div class="tab-content">
+                      <li>Work in Progress</li>
+                    </div>
+                  </div>
+                </div>
+              </div>
+                <div class="col wrapper">
+                  <div class="tabs">
+                    <div class="tab">
+                      <input type="radio" name="css-tabs-2" id="tab-3" checked class="tab-switch-2">
+                      <label for="tab-3" class="tab-label">
+                        <div class="Big_Number">27</div>
+                        <div class="Big_Sentence">ASKING QUESTIONS</div>
+                      </label>
+                      <div class="tab-content">
+                        <div class="tab-buttons_2">
+                        <li class="active">
+                          <a class="but " href="#">
+                            <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg"  width="14" height="14" fill="currentColor" class="bi bi-chat" viewBox="0 0 16 17">
+                              <path d="M2.678 11.894a1 1 0 0 1 .287.801 10.97 10.97 0 0 1-.398 2c1.395-.323 2.247-.697 2.634-.893a1 1 0 0 1 .71-.074A8.06 8.06 0 0 0 8 14c3.996 0 7-2.807 7-6 0-3.192-3.004-6-7-6S1 4.808 1 8c0 1.468.617 2.83 1.678 3.894zm-.493 3.905a21.682 21.682 0 0 1-.713.129c-.2.032-.352-.176-.273-.362a9.68 9.68 0 0 0 .244-.637l.003-.01c.248-.72.45-1.548.524-2.319C.743 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.52.263-1.639.742-3.468 1.105z"/>
+                            </svg>
+                            </div>
+                            <div class="number">
+                              12
+                            </div>
+                            <div class="sentence">
+                               <div class="text"> How to make good logo?</div>
+                            </div>
+                          </a>
+                        </li>
+                        <li><a class="but" href="#">
+                          <div class="icon">
+                          <svg xmlns="http://www.w3.org/2000/svg"  width="14" height="14" fill="currentColor" class="bi bi-chat" viewBox="0 0 16 17">
+                            <path d="M2.678 11.894a1 1 0 0 1 .287.801 10.97 10.97 0 0 1-.398 2c1.395-.323 2.247-.697 2.634-.893a1 1 0 0 1 .71-.074A8.06 8.06 0 0 0 8 14c3.996 0 7-2.807 7-6 0-3.192-3.004-6-7-6S1 4.808 1 8c0 1.468.617 2.83 1.678 3.894zm-.493 3.905a21.682 21.682 0 0 1-.713.129c-.2.032-.352-.176-.273-.362a9.68 9.68 0 0 0 .244-.637l.003-.01c.248-.72.45-1.548.524-2.319C.743 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.52.263-1.639.742-3.468 1.105z"/>
+                          </svg>
+                          </div>
+                          <div class="number">
+                          3
+                          </div>
+                          <div class="sentence">
+                          <div class="text">What are the best mobile apps for...</div>
+                        </div>
+
+                        </a></li>
+                        <li><a class="but" href="#">
+                          <div class="icon">
+                          <svg xmlns="http://www.w3.org/2000/svg"  width="14" height="14" fill="currentColor" class="bi bi-chat" viewBox="0 0 16 17">
+                            <path d="M2.678 11.894a1 1 0 0 1 .287.801 10.97 10.97 0 0 1-.398 2c1.395-.323 2.247-.697 2.634-.893a1 1 0 0 1 .71-.074A8.06 8.06 0 0 0 8 14c3.996 0 7-2.807 7-6 0-3.192-3.004-6-7-6S1 4.808 1 8c0 1.468.617 2.83 1.678 3.894zm-.493 3.905a21.682 21.682 0 0 1-.713.129c-.2.032-.352-.176-.273-.362a9.68 9.68 0 0 0 .244-.637l.003-.01c.248-.72.45-1.548.524-2.319C.743 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.52.263-1.639.742-3.468 1.105z"/>
+                          </svg>
+                          </div>
+                          <div class="number">
+                          67
+                          </div>
+                          <div class="sentence">
+                          <div class="text">What's the difference between UI and ...</div>
+                          </div>
+                        </a></li>
+                        <li><a class="but" href="#">
+                          <div class="icon">
+                          <svg xmlns="http://www.w3.org/2000/svg"  width="14" height="14" fill="currentColor" class="bi bi-chat" viewBox="0 0 16 17">
+                            <path d="M2.678 11.894a1 1 0 0 1 .287.801 10.97 10.97 0 0 1-.398 2c1.395-.323 2.247-.697 2.634-.893a1 1 0 0 1 .71-.074A8.06 8.06 0 0 0 8 14c3.996 0 7-2.807 7-6 0-3.192-3.004-6-7-6S1 4.808 1 8c0 1.468.617 2.83 1.678 3.894zm-.493 3.905a21.682 21.682 0 0 1-.713.129c-.2.032-.352-.176-.273-.362a9.68 9.68 0 0 0 .244-.637l.003-.01c.248-.72.45-1.548.524-2.319C.743 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.52.263-1.639.742-3.468 1.105z"/>
+                          </svg>
+                          </div>
+                          <div class="number">
+                          0
+                          </div>
+                          <div class="sentence">
+                          <div class="text"> What logos include hidden messages ...</div>
+                          </div>
+                        </a></li>
+                        <div id="moreText"> Work in Process</div>
+                        </div>
+                        <div class="s_m_btn">
+                          <button id="textButton_2" onclick="toggleText()">
+                            <div class="s_m">
+                              Show more
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-double-down" viewBox="0 0 22 22">
+                                <path fill-rule="evenodd" d="M1.646 6.646a.5.5 0 0 1 .708 0L8 12.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                                <path fill-rule="evenodd" d="M1.646 2.646a.5.5 0 0 1 .708 0L8 8.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                              </svg>
+                            </div>
+                            <div class="s_l">
+                              Show less
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-double-up" viewBox="0 0 22 22">
+                                <path fill-rule="evenodd" d="M7.646 2.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 3.707 2.354 9.354a.5.5 0 1 1-.708-.708l6-6z"/>
+                                <path fill-rule="evenodd" d="M7.646 6.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 7.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/>
+                              </svg>
+                            </div>
+                          </button>
+                        </div>
+  
+                      </div>
+                    </div>
+                    <div class="tab">
+                      <input type="radio" name="css-tabs-2" id="tab-4" checked class="tab-switch-2">
+                      <label for="tab-4" class="tab-label">
+                        <div class="Big_Number">7</div>
+                        <div class="Big_Sentence">ANSWERED QUESTIONS</div>
+                      </label>
+                      <div class="tab-content">
+                        <li>Work in Progress</li>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col wrapper">
+                  <div class="tabs">
+                    <div class="tab">
+                      <input type="radio" name="css-tabs-3" id="tab-5" checked class="tab-switch-3">
+                      <label for="tab-5" class="tab-label">
+                        <div class="Big_Number">19</div>
+                        <div class="Big_Sentence">FOLLOWING EXAMS</div>
+                      </label>
+                      <div class="tab-content">
+                        <div class="tab-buttons_3">
+                        <li><a href="#">
+                          <div class="bar_chart"><canvas id="bar-chart-sm-1"></canvas></div>
+                          <div class="text">Junior web designer</div>
+                        </a></li>
+                        <li><a href="#">
+                          <div class="bar_chart"><canvas id="bar-chart-sm-2"></canvas></div>
+                          <div class="text">Which is the best way to pass PMP ...</div>
+                        </a></li>
+                        <li><a href="#">
+                          <div class="bar_chart"><canvas id="bar-chart-sm-3"></canvas></div>
+                          <div class="text">What are great examples of viral UX/UI ...</div>
+                        </a></li>
+                        <li><a id="Last_Message" href="#">
+                          <div class="bar_chart"><canvas id="bar-chart-sm-4"></canvas></div>
+                          <div class="text">Why is consistency important in design?</div>
+                        </a></li>
+                        <div id="moreText"> Work in Process</div>
+                        </div>
+                        <div class="s_m_btn">
+                          <button id="textButton_3" onclick="toggleText()">
+                            <div class="s_m">
+                              Show more
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-double-down" viewBox="0 0 22 22">
+                                <path fill-rule="evenodd" d="M1.646 6.646a.5.5 0 0 1 .708 0L8 12.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                                <path fill-rule="evenodd" d="M1.646 2.646a.5.5 0 0 1 .708 0L8 8.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                              </svg>
+                            </div>
+                            <div class="s_l">
+                              Show less
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-double-up" viewBox="0 0 22 22">
+                                <path fill-rule="evenodd" d="M7.646 2.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 3.707 2.354 9.354a.5.5 0 1 1-.708-.708l6-6z"/>
+                                <path fill-rule="evenodd" d="M7.646 6.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 7.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/>
+                              </svg>
+                            </div>
+                          </button>
+                        </div>
+  
+                      </div>
+                    </div>
+                    <div class="tab">
+                      <input type="radio" name="css-tabs-3" id="tab-6" checked class="tab-switch-3">
+                      <label for="tab-6" class="tab-label">
+                        <div class="Big_Number">88</div>
+                        <div class="Big_Sentence">DONE EXAMS</div>
+                      </label>
+                      <div class="tab-content">
+                        <li>Work in Progress</li> 
+                      </div>
+                    </div>
+                  </div>
+                </div>
+          </div>
+          <div class="row">
+            <div class="tables_2">
+              <div class="tab_b_1">
+              <div class="col graphic">
+                <li>Expirience gained</li>
+                <div class="tbs">
+                  <div class="small_bar"><canvas id="bar-chart-1"></canvas></div>
+                  <div class="small_bar"><canvas id="bar-chart-2"></canvas></div>
+                  <div class="small_bar"><canvas id="bar-chart-3"></canvas></div>
+                  <div class="number">+142</div>
+                </div>
+                <div class="text">
+                  <div class="t">COURSE</div>
+                  <div class="t">QUESTION</div>
+                  <div class="t">EXAM</div>
+                  <div class="t_B">LAST MONTH</div>
+                </div>
+              </div>
+              <div class="line_chart">
+                <div class="text">Experience per day</div>
+                <div class="chart"><canvas id="myChart"></canvas></div>
+              </div>
+              </div>
+              </div>
+              <div class="col Friends">
+                <div class="list">
+                  <div class="Top">Friend Activity</div>
+                  <div class="buttons">
+                    <a href="#">
+                      <div class="content">
+                        <div class="photo"><img src="img/person 1.png" alt=""></div>
+                        <div class="Name">SHAWN PETERSON</div>
+                        <div class="Status">Finished the course: </div>
+                        <div class="Class">Basic for UX Designer</div>
+                        <div class="Time">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                            <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+                            <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/>
+                          </svg>
+                          9:30 PM
+                        </div>
+                      </div>
+                    </a>
+                    <a href="#">
+                      <div class="content">
+                        <div class="photo"><img src="img/person 2.png" alt=""></div>
+                        <div class="Name">MARY V. ROBINSON</div>
+                        <div class="Status">Asked question: </div>
+                        <div class="Class">What is the bets grid for desltop web?</div>
+                        <div class="Time">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                            <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+                            <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/>
+                          </svg>
+                          9:20 PM
+                        </div>
+                      </div>
+                    </a>
+                    <a href="#">
+                      <div class="content">
+                        <div class="photo"><img src="img/person 3.png" alt=""></div>
+                        <div class="Name">JOE RAMOS</div>
+                        <div class="Status">Finished the exam: </div>
+                        <div class="Class">Junior web designer</div>
+                        <div class="Time">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                            <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+                            <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/>
+                          </svg>
+                          7:45 PM
+                        </div>
+                      </div>
+                    </a>
+                    <a href="#">
+                      <div class="content">
+                        <div class="photo"><img src="img/person 4.png" alt=""></div>
+                        <div class="Name">SEAN WALKER</div>
+                        <div class="Status">Asked question: </div>
+                        <div class="Class">How to make good logo?</div>
+                        <div class="Time">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                            <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+                            <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/>
+                          </svg>
+                          9:30 PM
+                        </div>
+                      </div>
+                    </a>
+                    <div class="s_m_btn">
+                      <button id="textButton_3" onclick="toggleText()">
+                        <div class="s_m">
+                          Show more
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-double-down" viewBox="0 0 22 22">
+                            <path fill-rule="evenodd" d="M1.646 6.646a.5.5 0 0 1 .708 0L8 12.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                            <path fill-rule="evenodd" d="M1.646 2.646a.5.5 0 0 1 .708 0L8 8.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                          </svg>
+                        </div>
+                        <div class="s_l">
+                          Show less
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-double-up" viewBox="0 0 22 22">
+                            <path fill-rule="evenodd" d="M7.646 2.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 3.707 2.354 9.354a.5.5 0 1 1-.708-.708l6-6z"/>
+                            <path fill-rule="evenodd" d="M7.646 6.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 7.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/>
+                          </svg>
+                        </div>
+                      </button>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+    <script>
+      var hover_1= document
+    </script>
+
+
+    <script>
+      
+      var tab = document.querySelector('.tab-content');
+      var tab_2 = document.querySelector('.tab-content')
+      var button = document.querySelector('#textButton');
+      var button_2 = document.querySelector('#textButton_2');
+      var button_3 = document.querySelector('#textButton_3');
+      button.addEventListener('click',(e)=>{
+        tab.classList.toggle('show-more');
+      })
+      button_2.addEventListener('click',(e)=>{
+        tab_2.classList.toggle('show-more');
+      })
+      button_3.addEventListener('click',(e)=>{
+
+      })
+    </script>
+       
+    <script>
+      var btnContainer = document.getElementById("navbar_2");
+      var btns = btnContainer.getElementsByClassName("butt");
+
+      for(var i=0; i<btns.length; i++){
+        btns[i].addEventListener('click', function(){
+          var current = document.getElementsByClassName("active");
+          current[0].className = current[0].className.replace("active");
+          this.className += " active";
+        })
+      }
+    </script>
+    <script>
+       const ctn = document.getElementById('bar-chart-1');
+
+new Chart(ctn, {
+  type: 'bar',
+  data: {
+    labels: ['Course'],
+    datasets: [{
+      label: ' ',
+      data: [70,100],
+      borderWidth: 1,
+      borderColor: '#2ccc74',
+      backgroundColor: '#2ccc74',
+    }]
+  },
+  options: {
+      responsive: true,
+      maintainAspectRatio:false,
+      plugins: {
+              legend: {
+              display: false
+                      }
+          },
+
+          labels: {
+              display: false,
+          },
+  scales: {
+    y: {
+      display: false,
+      beginAtZero: true
+    },
+    x:{
+              display:false,
+            },
+
+xAxes: [{
+  barThickness: 2, 
+  barPercentage: 0.2,
+      maxBarThickness: 1 ,
+      }],
+
+  }
+}
+});
+
+ 
+    </script>
+    <script>
+             const ctt = document.getElementById('bar-chart-2');
+
+new Chart(ctt, {
+  type: 'bar',
+  data: {
+    labels: ['Question'],
+    datasets: [{
+      label: ' ',
+      data: [20,100],
+      borderWidth: 1,
+      borderColor: '#2ccc74',
+      backgroundColor: '#2ccc74',
+    }]
+  },
+  options: {
+      responsive: true,
+      maintainAspectRatio:false,
+      plugins: {
+              legend: {
+              display: false
+                      }
+          },
+
+          labels: {
+              display: false,
+          },
+  scales: {
+    y: {
+      display: false,
+      beginAtZero: true
+    },
+    x:{
+              display:false,
+            },
+
+xAxes: [{
+  barThickness: 2, 
+  barPercentage: 0.2,
+      maxBarThickness: 1 ,
+      }],
+
+  }
+}
+});
+    </script>
+    <script>
+             const ctx = document.getElementById('bar-chart-3');
+
+new Chart(ctx, {
+  type: 'bar',
+  data: {
+    labels: ['Exam'],
+    datasets: [{
+      label: ' ',
+      data: [50,100],
+      borderWidth: 1,
+      borderColor: '#2ccc74',
+      backgroundColor: '#2ccc74',
+    }]
+  },
+  options: {
+      responsive: true,
+      maintainAspectRatio:false,
+      plugins: {
+              legend: {
+              display: false
+                      }
+          },
+
+          labels: {
+              display: false,
+          },
+  scales: {
+    y: {
+      display: false,
+      beginAtZero: true
+    },
+    x:{
+              display:false,
+            },
+
+xAxes: [{
+  barThickness: 2, 
+  barPercentage: 0.2,
+      maxBarThickness: 1 ,
+      }],
+
+  }
+}
+});
+    </script>
+ <script>
+  const ctq = document.getElementById('bar-chart-sm-1');
+
+new Chart(ctq, {
+  type: 'bar',
+  data: {
+    labels: ['Progress'],
+    datasets: [{
+      label: ' ',
+      data: [50,100],
+      borderWidth: 1,
+      borderColor: '#2ccc74',
+      backgroundColor: '#2ccc74',
+    }]
+  },
+  options: {
+      responsive: true,
+      maintainAspectRatio:false,
+      plugins: {
+              legend: {
+              display: false
+                      },
+          labels: {
+              display: false,
+          }
+        },
+  scales: {
+    y: {
+      display: false,
+    },
+    x:{
+              display:false,
+            },
+
+    xAxes: [{
+        }],
+
+    }
+  }
+  });
+
+ 
+    </script>
+     <script>
+      const cty = document.getElementById('bar-chart-sm-2');
+    
+    new Chart(cty, {
+      type: 'bar',
+      data: {
+        labels: ['Progress'],
+        datasets: [{
+          label: ' ',
+          data: [20,100],
+          borderWidth: 1,
+          borderColor: '#2ccc74',
+          backgroundColor: '#2ccc74',
+        }]
+      },
+      options: {
+          responsive: true,
+          maintainAspectRatio:false,
+          plugins: {
+                  legend: {
+                  display: false
+                          },
+              labels: {
+                  display: false,
+              }
+            },
+      scales: {
+        y: {
+          display: false,
+        },
+        x:{
+                  display:false,
+                },
+    
+        xAxes: [{
+            }],
+    
+        }
+      }
+      });
+    
+     
+        </script>
+             <script>
+              const ctu = document.getElementById('bar-chart-sm-3');
+            
+            new Chart(ctu, {
+              type: 'bar',
+              data: {
+                labels: ['Progress'],
+                datasets: [{
+                  label: ' ',
+                  data: [35,100],
+                  borderWidth: 1,
+                  borderColor: '#2ccc74',
+                  backgroundColor: '#2ccc74',
+                }]
+              },
+              options: {
+                  responsive: true,
+                  maintainAspectRatio:false,
+                  plugins: {
+                          legend: {
+                          display: false
+                                  },
+                      labels: {
+                          display: false,
+                      }
+                    },
+              scales: {
+                y: {
+                  display: false,
+                },
+                x:{
+                          display:false,
+                        },
+            
+                xAxes: [{
+                    }],
+            
+                }
+              }
+              });
+            
+             
+                </script>
+                     <script>
+                      const cti = document.getElementById('bar-chart-sm-4');
+                    
+                    new Chart(cti, {
+                      type: 'bar',
+                      data: {
+                        labels: ['Progress'],
+                        datasets: [{
+                          label: ' ',
+                          data: [55,100],
+                          borderWidth: 1,
+                          borderColor: '#2ccc74',
+                          backgroundColor: '#2ccc74',
+                        }]
+                      },
+                      options: {
+                          responsive: true,
+                          maintainAspectRatio:false,
+                          plugins: {
+                                  legend: {
+                                  display: false
+                                          },
+                              labels: {
+                                  display: false,
+                              }
+                            },
+                      scales: {
+                        y: {
+                          display: false,
+                        },
+                        x:{
+                                  display:false,
+                                },
+                    
+                        xAxes: [{
+                            }],
+                    
+                        }
+                      }
+                      });
+                    
+                     
+                        </script>
+    <script src="js/bootstrap.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-migrate-3.4.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" 
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" 
+    crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" 
+    integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+    crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
+</body>
+</html>

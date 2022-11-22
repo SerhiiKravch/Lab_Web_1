@@ -1,0 +1,79 @@
+.dashboard{
+    border: 1px solid rgb(156, 160, 160);;
+    background: #fff;
+    border-left: 0px #fff;
+    border-right: 0px #fff;
+    border-bottom: 0px #fff;
+}
+ .dashboard .photo{
+    width: 118px;
+    height: 120px;
+    float: left;
+ }
+ .dashboard .Per_Info{
+    float: left;
+    font-weight:600;
+    font-size: large;
+ }
+
+.dashboard .Per_Info .status{
+    font-size: 13px;
+    color: grey;
+}
+
+.dashboard .Per_Info .status a{
+    color: lightskyblue;
+}
+
+.dashboard .Per_Info .rating{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+ .dashboard .Per_Info .rating .checked{
+    color: orange;
+ }
+
+ .dashboard .Per_Info .status li{
+    float: right;
+    padding-right: 138px ;
+ }
+
+ .dashboard .Per_Info .status li a{
+    text-decoration: none;
+ }
+
+ .dashboard .Per_Info .points{
+    font-size: 12px;
+    color: grey;
+ }
+
+ .dashboard .edit{
+    height: 36px;
+    width: 36px;
+    border-radius: 50%;
+    background: #fff;
+    border: 1px solid grey;
+    text-decoration: none;
+    color: grey;
+    display: inline-flex ;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s;
+ }
+
+ .dashboard .edit:hover{
+    background: rgb(44, 204, 116);
+    border: none;
+    color: #fff;
+};
+
+ .dashboard .logout{
+    border-radius: 50%;
+    width:36px;
+    height: 36px;
+    display: inline-flex ;
+    align-items: center;
+    justify-content: center;
+ }
